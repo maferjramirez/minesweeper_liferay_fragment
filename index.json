@@ -1,0 +1,60 @@
+{
+	"fieldSets": [
+		{
+			"label": "Configuraciones",
+			"fields": [
+				{
+					"name": "dificultad",
+					"label": "Dificultad",
+					"description": "Elegir el tamaño del tablero",
+					"type": "select",
+					"dataType": "string",
+					"typeOptions": {
+						"validValues": [
+							{"value": "9x9x10"},
+							{"value": "16x16x40"},
+							{"value": "30x16x99"}
+						]
+					},
+					"defaultValue": "16x16x40"
+				},
+				{
+					"name": "iconoBandera",
+					"label": "Icono de Bandera",
+					"description": "Icono de Bandera",
+					"type": "text",
+					"dataType": "string",
+					"defaultValue": "⚑"
+				},
+				{
+					"name": "iconoMina",
+					"label": "Icono de Mina",
+					"description": "Icono de Mina",
+					"type": "text",
+					"dataType": "string",
+					"defaultValue": "☠"
+				},
+				{
+					"name": "minaColor",
+					"label": "Color de casilla de mina",
+					"type": "colorPalette",
+					"dataType": "object",
+					"defaultValue": {
+						"cssClass": "red",
+						"rgbValue": "rgb(255,0,0)"
+					}
+				},
+				{
+					"name": "tableroColor",
+					"label": "Color de casilla de tablero",
+					"type": "colorPalette",
+					"dataType": "object",
+					"defaultValue": {
+						"cssClass": "cyan",
+						"rgbValue": "rgb(0,255,255)"
+					}
+				}
+			]
+		}
+	]
+}

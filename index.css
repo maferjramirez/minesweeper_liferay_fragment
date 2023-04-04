@@ -1,0 +1,29 @@
+#gameboard {
+  display: grid;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+	    box-shadow: inset -2px 0px 4px 0px #00000082;
+}
+
+.square.clicked {
+  background-color: #ddd;
+  box-shadow: inset 2px 0px 5px 3px rgb(0 0 0 / 28%);
+}
+
+.square.mine {
+  /*background-color: red;*/
+  /*color: white;*/
+}
+
+.square.mine.boomed {
+  /*background-color: red;*/
+}

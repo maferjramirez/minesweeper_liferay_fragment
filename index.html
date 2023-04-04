@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buscaminas</title>
+</head>
+	<style>
+		#gameboard {
+			/*
+			grid-template-columns: repeat(10, 40px);
+			grid-template-rows: repeat(10, 40px);
+			*/
+			grid-template-columns: repeat(${configuration.dificultad?split("x")[0]}, 40px);
+			grid-template-rows: repeat(${configuration.dificultad?split("x")[1]}, 40px);
+		}
+		
+		.square {
+			background-color: ${configuration.tableroColor.rgbValue};
+		}
+		.square.mine.boomed {
+			background-color: ${configuration.minaColor.rgbValue};
+		}
+	</style>
+<body>
+	<h1>Buscaminas</h1>
+	<div id="gameboard"></div>
+	<button id="reset">Jugar de nuevo</button>
+
+</body>
+</html>
